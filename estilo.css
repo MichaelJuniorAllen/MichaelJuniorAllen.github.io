@@ -144,11 +144,12 @@
         /* *********************/
         
         #sobremi {
-            max-width: 1100px;
+            max-width: 1400px;
             margin: auto;
             padding: 100px 15px;
             color: #111135;
             display: flex;
+            background-color: #f3f3f3;
         }
         
         #sobremi .contenedor-foto {
@@ -329,13 +330,14 @@
             text-align: center;
             font-size: 22px;
             text-transform: uppercase;
-            color: #111135;
+            color: #6a50ff;
             text-decoration: underline;
             text-decoration-color: #d3d3d3;
             text-decoration-thickness: 5px;
         }
         
         #contacto .btn-enviar {
+            background-color: #6a50ff;
             display: block;
             margin: auto;
             cursor: pointer;
@@ -344,7 +346,7 @@
         }
         
         #contacto .btn-enviar:hover {
-            background-color: #6a50ff;
+            background-color: #2d0de0;
             color: #fff;
         }
         /* *********************/
@@ -365,6 +367,11 @@
             margin: 5px;
             font-size: 26px;
         }
+
+        footer a:hover {
+            color: #6a50ff;
+        }
+        /* 
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
