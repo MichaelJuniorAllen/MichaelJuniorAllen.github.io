@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/estilo.css">
-    <title>MR Desarrollador</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <title id="page-title">MR Desenvolvedor</title>
 </head>
 
 <body>
@@ -27,6 +27,16 @@
                             <li><a href="#contacto" onclick="seleccionar(this)">FALA COMIGO</a></li>
                         </ul>
                     </nav>
+
+                    <!-- Seletor de Idiomas -->
+                    <div class="idiomas-selector">
+                        <select id="selectorIdioma" onchange="cambiarIdioma(this.value)">
+                            <option value="pt" selected>Português</option>
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
 
                     <!-- Icono do menu responsive -->
                     <div id="icono-nav" onclick="responsiveMenu()">
@@ -57,15 +67,13 @@
             <img src="img/fotox.jpg" alt="">
         </div>
         <div class="sobremi">
-            <p class="titulo-seccion">Sobre MiM</p>
+            <p class="titulo-seccion">Sobre Mim</p>
             <h2>Olá, Sou <span>Michael Reyes</span> </h2>
             <h3>Desenvolvedor web</h3>
-            <p>Soy un programador junior altamente motivado y entusiasta que está buscando oportunidades laborales para iniciar mi carrera en el campo de la programación. Me apasiona el desarrollo de software y tengo un sólido conocimiento en lenguajes de programación como Python y JavaScript.
-            He completado con éxito proyectos académicos y personales, lo que me ha permitido adquirir experiencia en el desarrollo de aplicaciones web y móviles. Soy una persona autodidacta, siempre dispuesta a aprender nuevas tecnologías y enfoques para mejorar mis habilidades.</p>
-            <p>Además, poseo habilidades en resolución de problemas y análisis lógico, lo que me permite abordar desafíos de manera eficiente y encontrar soluciones efectivas. Tengo una mentalidad orientada al trabajo en equipo y disfruto colaborar con otros desarrolladores para lograr resultados de calidad.
-             Estoy abierto a oportunidades de aprendizaje y crecimiento profesional, y estoy dispuesto a enfrentar nuevos desafíos para seguir desarrollando mis habilidades y conocimientos. Si buscas a un programador junior apasionado y comprometido, estaré encantado de ser considerado para cualquier puesto en el que pueda aportar y crecer dentro de su organización.
+            <p>Sou um programador junior altamente motivado e entusiasta em busca de oportunidades para iniciar minha carreira no campo da programação. Sou apaixonado pelo desenvolvimento de software e possuo sólido conhecimento em linguagens de programação como Python e JavaScript. Tenho completado com sucesso projetos acadêmicos e pessoais, o que me permitiu adquirir experiência no desenvolvimento de aplicações web e móveis. Sou uma pessoa autodidata, sempre disposto a aprender novas tecnologias e abordagens para melhorar minhas habilidades.</p>
+            <p>Além disso, possuo habilidades em resolução de problemas e análise lógica, o que me permite abordar desafios de forma eficiente e encontrar soluções efetivas. Tenho uma mentalidade orientada ao trabalho em equipe e gosto de colaborar com outros desenvolvedores para alcançar resultados de qualidade. Estou aberto a oportunidades de aprendizado e crescimento profissional, e disposto a enfrentar novos desafios para continuar desenvolvendo minhas habilidades. Se você procura um programador junior apaixonado e comprometido, ficarei feliz em ser considerado para qualquer posição onde possa contribuir e crescer na sua organização.
             </p>
-            <a href="https://flowcv.com/resume/6c3owdk398" target="_blank">Descargar CV</a>
+            <a href="https://flowcv.com/resume/6c3owdk398" target="_blank">Baixar CV</a>
         </div>
     </section>
     
@@ -117,7 +125,9 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto5.jpg" alt="">
+                <a href="#" target="_blank">
+                <img src="img/proyecto5.jpg" alt="Proyecto 5">
+                </a>
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
@@ -125,7 +135,9 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto6.jpg" alt="">
+                <a href="#" target="_blank">
+                <img src="img/proyecto6.jpg" alt="Proyecto 6">
+                </a>
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
@@ -135,7 +147,9 @@
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto7.jpg" alt="">
+                <a href="#" target="_blank">
+                <img src="img/proyecto7.jpg" alt="Proyecto 7">
+                </a>
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
@@ -143,7 +157,9 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto8.jpg" alt="">
+                <a href="#" target="_blank">
+                <img src="img/proyecto8.jpg" alt="Proyecto 8">
+                </a>
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
@@ -151,7 +167,9 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto9.jpg" alt="">
+                <a href="#" target="_blank">
+                <img src="img/proyecto9.jpg" alt="Proyecto 9">
+                </a>
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
@@ -164,18 +182,30 @@
     <section id="contacto">
         <h3 class="titulo-seccion">fala comigo</h3>
         <div class="contenedor-form">
-            <form action="https://formspree.io/f/xzbqyvlv" method="POST">
+            <form id="formularioContacto" action="https://formspree.io/f/xzbqyvlv" method="POST" novalidate>
                 <div class="fila mitad">
-                    <input type="text" name="Nome" placeholder="Nome completo" class="input-mitad">
-                    <input type="email" name="Email" placeholder="Email" class="input-mitad">
+                    <div class="campo">
+                        <input type="text" name="Nome" placeholder="Nome" class="input-mitad" required>
+                        <span class="error-message" id="error-nome"></span>
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="Email" placeholder="Email" class="input-mitad" required>
+                        <span class="error-message" id="error-email"></span>
+                    </div>
                 </div>
                 <div class="fila">
-                    <input type="text" name="assunto" placeholder="Assunto..."  class="input-full">
+                    <div class="campo">
+                        <input type="text" name="assunto" placeholder="Assunto..."  class="input-full" required>
+                        <span class="error-message" id="error-assunto"></span>
+                    </div>
                 </div>
                 <div class="fila">
-                    <textarea type="text" cols="30" rows="10" name="mensagem" placeholder="mensagem..." class="input-full"></textarea>
+                    <div class="campo">
+                        <textarea cols="30" rows="10" name="mensagem" placeholder="mensagem..." class="input-full" required></textarea>
+                        <span class="error-message" id="error-mensagem"></span>
+                    </div>
                 </div>
-
+                <div id="mensagem-sucesso" class="mensagem-sucesso"></div>
                 <input type="submit" value="Enviar mensagem" class="btn-enviar">
             </form>
         </div>
@@ -192,7 +222,8 @@
 
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="./traduciones.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
